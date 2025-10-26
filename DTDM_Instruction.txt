@@ -1,0 +1,30 @@
+Click "Initiate" to start 
+-----------------------------------------------------------------------------
+◆(Step 1) Enter field strength and select 2 nuclei for you application (no more and no less).
+Example: 4.7T + 2H/23Na
+-----------------------------------------------------------------------------
+◆(Step 2) Either load or create a inductive source impedance vector representing the coil. 
+    ★(a) If load, prepare the measured impedance file as the example file, with three columns: frequency, S11 magnitude, and S11 phase (in radians). 
+    ★(b) if create, manually enter the parameters to define the coil impedance as a function of frequency.
+    ★(c) Click blue button to either load or create
+-----------------------------------------------------------------------------
+◆(Step 3) Enter the matching network component values for each nucleus’s single-tuned matching network.  
+   ★ (a) The source impedance at each selected nucleus’s Larmor frequency is displayed. Use this information to design an appropriate single-tuned matching network (cap only) for each frequency. You may use free tools such as “Smith – Fritz Dellsperger” (link below) or “Online Smith Chart Tool – Will Kelsey” (link below) for this purpose. 
+    ★ (b) After finalizing the single-tuned matching networks for all nuclei, enter the network type and the component values of the series and shunt capacitors. The matching networks for both nuclei must use the same configuration type (either series + shunt or shunt + series).
+    ★(c) click blue button to plot the matching network's  impedance. 
+-----------------------------------------------------------------------------
+◆(Step 4) The desired reactance of each LCC network (series/shut depends on coil type) at each nucleus' Larmor frequency has been plot and highlighted. It means that the LCC network needs to be these highlighted reactance at each pre-selected frequency, so that these LCC network can function as the pre-entered single-tuned matching network at different Larmor frequency. 
+    ★(a) iteratively adjust all the components value to match the LCC curves with the highlighted points. 
+    ★(b) "Coarse" mean re-center the slider's range to 0.5-1.5x of its current value, for you to coarse tune.
+    ★(c) "Fine" mean re-center the slider's range to 0.9-1.1x of its current value, for you to fine tune.
+-----------------------------------------------------------------------------
+◆(Optional) Enable impedance monitoring only after completing all previous steps to evaluate whether the DTDM matching network achieves proper 50 Ω matching at each frequency.
+⚠️ Warning: Enabling impedance monitoring may significantly slow down the calculation.
+-----------------------------------------------------------------------------
+◆(Reference)
+    ★(a) Smith - Fritz Dellsperger
+http://www.fritz.dellsperger.net/smith.html
+   ★ (b) Online Smith Chart Tool - Will Kelsey
+https://www.will-kelsey.com/smith_chart/
+-----------------------------------------------------------------------------
+
