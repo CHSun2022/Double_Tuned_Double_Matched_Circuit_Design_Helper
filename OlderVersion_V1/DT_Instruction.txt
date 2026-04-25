@@ -1,0 +1,22 @@
+◆Step 1 Instruction:
+	★(a) click to Initiate
+	★(b) Input your field strength, select the nuclei and choose the color you want to mark in the plot.
+	---------------------------------------------------------
+	Example:  choose 4.7T and mark 2H/23Na
+
+
+
+◆Step 2 Instruction: Either load a measured source impedance or create the theoretical impedance
+	★(a) Prepare the measured impedance file as the example file, with three columns: frequency, S11 magnitude, and S11 phase (in radians).
+	★(b) Or enter the desired parameters to create a thoertical impedace
+	★(c) Click plot in either case
+	--------------------------------------------------------------------------------------------------------------------------
+	Example: Use the example impedance S11 file of a 10x6cm rectangular loop coil measured from 10-70MHz, then click blue buttom
+
+
+
+◆Step 3 Instruction:
+	★(a) Choose the LCC type and click the blue bottom to plot LCC network impedance
+	★(b) Adjust the values of the three components to match the source reactance with the LCC reactance, thereby creating resonance
+	-----------------------------------------------------------------------------------------------------
+	Example: The LCC type 1 of C1-80pF, L1-42nH and C2-268 pF can be used to double tune the 10x6cm loop coil at 2H/23Na in 4.7T
